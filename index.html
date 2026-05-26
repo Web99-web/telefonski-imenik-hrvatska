@@ -238,7 +238,6 @@
       font-weight: 700;
       font-size: 14px;
     }
-
     .note {
       background: #f8fafc;
       border-left: 4px solid var(--blue);
@@ -248,6 +247,66 @@
       margin-top: 18px;
     }
 
+    /* ==========================================
+       HITNI BROJEVI — VIZUALNO ISTAKNUTE KARTICE
+       Ovaj CSS uređuje sekciju "Važni hitni brojevi u Hrvatskoj"
+       Dodaje obojene oznake/badge za brojeve 112, 192, 193, 194, 195 i 1987
+       ========================================== */
+
+    .emergency-grid .card {
+      position: relative;
+      padding-top: 24px;
+      border: 1px solid #dbeafe;
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+    }
+
+    .emergency-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 64px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #0f172a;
+      background: #e0f2fe;
+    }
+
+    .emergency-blue .emergency-number {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .emergency-dark .emergency-number {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .emergency-red .emergency-number {
+      background: #fee2e2;
+      color: #b91c1c;
+    }
+
+    .emergency-green .emergency-number {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    .emergency-teal .emergency-number {
+      background: #ccfbf1;
+      color: #0f766e;
+    }
+
+    .emergency-yellow .emergency-number {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    /* KRAJ CSS-a za sekciju hitnih brojeva */
+
+    
     .content-columns {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
