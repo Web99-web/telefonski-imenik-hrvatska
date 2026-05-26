@@ -248,60 +248,88 @@
     }
 
     /* ==========================================
-       HITNI BROJEVI — VIZUALNO ISTAKNUTE KARTICE
+       HITNI BROJEVI — OBOJENE KARTICE
        Ovaj CSS uređuje sekciju "Važni hitni brojevi u Hrvatskoj"
-       Dodaje obojene oznake/badge za brojeve 112, 192, 193, 194, 195 i 1987
+       Svaka kartica ima svoju nježnu boju, a broj je istaknut tamnijim tonom
        ========================================== */
 
     .emergency-grid .card {
       position: relative;
-      padding-top: 24px;
-      border: 1px solid #dbeafe;
-      background: linear-gradient(180deg, #ffffff, #f8fbff);
+      padding: 22px;
+      border: 1px solid transparent;
     }
 
     .emergency-number {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 64px;
-      padding: 8px 14px;
+      min-width: 74px;
+      padding: 9px 16px;
       border-radius: 999px;
-      font-size: 20px;
-      font-weight: 800;
-      margin-bottom: 12px;
-      color: #0f172a;
-      background: #e0f2fe;
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    }
+
+    .emergency-blue {
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      border-color: #bfdbfe;
     }
 
     .emergency-blue .emergency-number {
-      background: #dbeafe;
       color: #1d4ed8;
     }
 
+    .emergency-dark {
+      background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+      border-color: #cbd5e1;
+    }
+
     .emergency-dark .emergency-number {
-      background: #e2e8f0;
       color: #0f172a;
     }
 
+    .emergency-red {
+      background: linear-gradient(135deg, #fee2e2, #fff7ed);
+      border-color: #fecaca;
+    }
+
     .emergency-red .emergency-number {
-      background: #fee2e2;
       color: #b91c1c;
     }
 
+    .emergency-green {
+      background: linear-gradient(135deg, #dcfce7, #f0fdf4);
+      border-color: #bbf7d0;
+    }
+
     .emergency-green .emergency-number {
-      background: #dcfce7;
       color: #15803d;
     }
 
+    .emergency-teal {
+      background: linear-gradient(135deg, #ccfbf1, #ecfeff);
+      border-color: #99f6e4;
+    }
+
     .emergency-teal .emergency-number {
-      background: #ccfbf1;
       color: #0f766e;
     }
 
+    .emergency-yellow {
+      background: linear-gradient(135deg, #fef3c7, #fff7ed);
+      border-color: #fde68a;
+    }
+
     .emergency-yellow .emergency-number {
-      background: #fef3c7;
       color: #92400e;
+    }
+
+    .emergency-grid .card p {
+      color: #334155;
+      margin-bottom: 0;
     }
 
     /* KRAJ CSS-a za sekciju hitnih brojeva */
